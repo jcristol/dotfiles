@@ -4,6 +4,5 @@ christian-kohler.path-intellisense
 eamodio.gitlens
 eg2.tslint
 esbenp.prettier-vscode
-mattconde.vscode-snazz-theme
-PKief.material-icon-theme
+file-icons.file-icons
 vscodevim.vim

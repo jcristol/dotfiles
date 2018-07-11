@@ -1,16 +1,12 @@
 #!/bin/zsh
 
-# make sure developer tools have been run
-echo "install xcode dev"
+# make sure developer tools are installed 
+echo "install xcode developer tools"
 xcode-select --install
 
-# Bootstrap script for setting up a new OSX machine
-echo "install the .files"
-./install
-
-# This should be idempotent so it can be run multiple times.
-
-echo "Starting bootstrapping"
+# brew installs
+echo
+echo "Start Brewing"
 
 # Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
@@ -20,11 +16,8 @@ fi
 
 # update homebrew
 brew update
-
-#Install GNU core utilities 
-brew install coreutils
-
 PACKAGES=(
+	coreutils
 	getantibody/tap/antibody
 	bat
 	diff-so-fancy
@@ -43,23 +36,6 @@ PACKAGES=(
 	tig
 	python
 )
-
-NPM_PACKAGES=(
-	pure-prompt
-)
-
-echo "Installing global npm packages"
-npm install --global ${NPM_PACKAGES[@]}
-
-echo "Installing packages..."
-brew install ${PACKAGES[@]}
-
-echo "Cleaning up..."
-brew cleanup
-
-echo "Installing cask..."
-brew tap phinze/homebrew-cask
-
 CASKS=(
     flux
 		hyper
@@ -76,23 +52,36 @@ CASKS=(
 		docker
 		evernote
 )
-
+echo "Installing packages..."
+brew install ${PACKAGES[@]}
+echo "Installing cask..."
+brew tap phinze/homebrew-cask
 echo "Installing cask apps..."
 brew cask install ${CASKS[@]}
 
-# Set fast key repeat rate
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+NPM_PACKAGES=(
+	pure-prompt
+)
+echo
+echo "Install NPM packages"
+npm install --global ${NPM_PACKAGES[@]}
 
-echo "zsh and then run the plugin update"
+echo
+echo "Clean up Brew and NPM"
+source ~/.brew-clean
+
+# bootstrap config files
+echo
+echo "install the .files and config files"
+echo "also install vscode plugins"
+./install
+
+echo
+echo "source zsh and update plugins"
 source ~/.zshrc
 updateplugins
 
-echo "Bootstrapping complete"
-
-echo "Clean up Brew"
-source ~/.brew-clean
-
+echo
 echo "install cursive fonts"
 cd ~
 git clone https://github.com/kencrocken/FiraCodeiScript
@@ -100,10 +89,22 @@ mv FiraCodeiScript/*.ttf ~/Library/Fonts/.
 rm -rf FiraCodeiScript
 cd Dotfiles
 
-echo "Please install these vscode packages"
-# todo
-
-
+echo
 echo "Still more python work todo check this brew info"
 brew info python
 echo "prolly add /usr/local/opt/python/libexec/bin to path"
+
+echo
+echo "Set keyrepeat"
+# Set fast key repeat rate
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+echo
+echo "default shell to zsh"
+chsh -s /bin/zsh
+
+echo
+echo
+echo "Bootstrapping complete"
+echo "Please restart system"

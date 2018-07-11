@@ -93,6 +93,17 @@ echo "Bootstrapping complete"
 echo "Clean up Brew"
 source ~/.brew-clean
 
+echo "install cursive fonts"
+cd ~
+git clone https://github.com/kencrocken/FiraCodeiScript
+mv FiraCodeiScript/*.ttf ~/Library/Fonts/.
+rm -rf FiraCodeiScript
+cd Dotfiles
+
+echo "Please install these vscode packages"
+# todo
+
+
 echo "Still more python work todo check this brew info"
 brew info python
 echo "prolly add /usr/local/opt/python/libexec/bin to path"

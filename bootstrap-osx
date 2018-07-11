@@ -41,6 +41,7 @@ PACKAGES=(
 	ruby
 	telnet
 	tig
+	python
 )
 
 NPM_PACKAGES=(
@@ -90,3 +91,7 @@ echo "Bootstrapping complete"
 
 echo "Clean up Brew"
 source ~/.brew-clean
+
+echo "Still more python work todo check this brew info"
+brew info python
+echo "prolly add /usr/local/opt/python/libexec/bin to path"

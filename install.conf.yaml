@@ -15,3 +15,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [cat dots/vscode-extensions.txt | xargs code --install-extension, Install all vscode extensions]
+    - [code --list-extensions > dots/vscode-extensions.txt, List all vscode extensions]

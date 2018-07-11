@@ -102,7 +102,7 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
 echo
 echo "default shell to zsh"
-chsh -s /bin/zsh
+sudo chsh -s /bin/zsh
 
 echo
 echo

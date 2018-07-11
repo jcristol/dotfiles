@@ -1,0 +1,9 @@
+aaronthomas.vscode-snazzy-operator
+abusaidm.html-snippets
+christian-kohler.path-intellisense
+eamodio.gitlens
+eg2.tslint
+esbenp.prettier-vscode
+mattconde.vscode-snazz-theme
+PKief.material-icon-theme
+vscodevim.vim

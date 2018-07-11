@@ -72,7 +72,6 @@ CASKS=(
 		focus
 		postman
 		slack
-		dash
 		docker
 )
 

@@ -1,5 +1,16 @@
+- defaults:
+    link:
+        relink: true
+
 - clean: ['~']
 
 - link:
+    ~/.vimrc: dots/vimrc 
+    ~/.zshrc: dots/zsh/zshrc.zsh
+    ~/.zsh_plugins.txt: dots/zsh/plugins.txt
+    ~/.gitconfig: dots/gitconfig
+    ~/.hyper.js: dots/hyper.js
+    ~/.brew-clean: dots/brew-clean
 
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

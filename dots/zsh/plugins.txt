@@ -1,0 +1,7 @@
+sindresorhus/pure
+mafredri/zsh-async
+rupa/z
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting

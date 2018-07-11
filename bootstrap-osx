@@ -1,0 +1,93 @@
+#!/bin/zsh
+
+# make sure developer tools have been run
+echo "install xcode dev"
+xcode-select --install
+
+# Bootstrap script for setting up a new OSX machine
+echo "install the .files"
+./install
+
+# This should be idempotent so it can be run multiple times.
+
+echo "Starting bootstrapping"
+
+# Check for Homebrew, install if we don't have it
+if test ! $(which brew); then
+    echo "Installing homebrew..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+# update homebrew
+brew update
+
+#Install GNU core utilities 
+brew install coreutils
+
+PACKAGES=(
+	getantibody/tap/antibody
+	bat
+	diff-so-fancy
+	exa
+	fd
+	gcc
+	howdoi
+	httpie
+	macvim
+	mas
+	nmap
+	node
+	ripgrep
+	ruby
+	telnet
+	tig
+)
+
+NPM_PACKAGES=(
+	pure-prompt
+)
+
+echo "Installing global npm packages"
+npm install --global ${NPM_PACKAGES[@]}
+
+echo "Installing packages..."
+brew install ${PACKAGES[@]}
+
+echo "Cleaning up..."
+brew cleanup
+
+echo "Installing cask..."
+brew tap phinze/homebrew-cask
+
+CASKS=(
+    flux
+		hyper
+		visual-studio-code
+		alfred
+		spotify
+		google-chrome
+		tower
+		1password
+		karabiner
+		focus
+		postman
+		slack
+		dash
+		docker
+)
+
+echo "Installing cask apps..."
+brew cask install ${CASKS[@]}
+
+# Set fast key repeat rate
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+echo "zsh and then run the plugin update"
+source ~/.zshrc
+updateplugins
+
+echo "Bootstrapping complete"
+
+echo "Clean up Brew"
+source ~/.brew-clean

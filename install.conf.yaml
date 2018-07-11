@@ -11,6 +11,7 @@
     ~/.gitconfig: dots/gitconfig
     ~/.hyper.js: dots/hyper.js
     ~/.brew-clean: dots/brew-clean
+    ~/Library/Application Support/Code/User/settings.json: dots/settings.json
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

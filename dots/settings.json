@@ -1,0 +1,33 @@
+{
+    "editor.fontFamily": "Fira Code iScript",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,   
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Snazzy Operator",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","d"],
+            "after": ["d", "d"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    }
+}

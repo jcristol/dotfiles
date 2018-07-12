@@ -38,6 +38,7 @@ PACKAGES=(
 	neofetch
 )
 CASKS=(
+		hammerspoon
     flux
 		hyper
 		visual-studio-code

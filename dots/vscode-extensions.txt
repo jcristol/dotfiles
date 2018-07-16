@@ -1,1 +1,9 @@
 aaronthomas.vscode-snazzy-operator
+abusaidm.html-snippets
+christian-kohler.path-intellisense
+dracula-theme.theme-dracula
+eamodio.gitlens
+eg2.tslint
+esbenp.prettier-vscode
+file-icons.file-icons
+vscodevim.vim

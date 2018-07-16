@@ -26,27 +26,21 @@ PACKAGES=(
 	gcc
 	howdoi
 	httpie
-	macvim
 	mas
 	nmap
-	node
 	ripgrep
 	ruby
 	telnet
 	tig
-	python
 	neofetch
 )
 CASKS=(
-		hammerspoon
-    flux
+    		flux
 		hyper
 		visual-studio-code
 		alfred
 		spotify
-		google-chrome
 		tower
-		1password
 		karabiner
 		focus
 		postman

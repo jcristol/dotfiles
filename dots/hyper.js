@@ -133,7 +133,7 @@ module.exports = {
       resizable: false,
       startAlone: false,
       startup: true,
-      size: 0.4,
+      size: 0.5,
       tray: false,
       unique: true
     },

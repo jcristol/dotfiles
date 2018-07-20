@@ -35,13 +35,12 @@ PACKAGES=(
 	neofetch
 )
 CASKS=(
-    		flux
+    flux
 		hyper
 		visual-studio-code
 		alfred
 		spotify
 		tower
-		karabiner
 		focus
 		postman
 		slack
@@ -72,6 +71,11 @@ echo "install the .files and config files"
 echo "also install vscode plugins"
 ./install
 
+# Oh My Zsh
+echo
+echo "Install Oh My Zsh"
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo
 echo "source zsh and update plugins"
 source ~/.zshrc
@@ -86,15 +90,7 @@ rm -rf FiraCodeiScript
 cd Dotfiles
 
 echo
-echo "Still more python work todo check this brew info"
-brew info python
-echo "prolly add /usr/local/opt/python/libexec/bin to path"
-
-echo
-echo "Set keyrepeat"
-# Set fast key repeat rate
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+echo "You might have to install python3"
 
 echo
 echo "default shell to zsh"

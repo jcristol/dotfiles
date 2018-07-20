@@ -82,6 +82,10 @@ source ~/.zshrc
 updateplugins
 
 echo
+echo "Installing Vim Plugins"
+vim +PlugInstall --sync +qa
+
+echo
 echo "install cursive fonts"
 cd ~
 git clone https://github.com/kencrocken/FiraCodeiScript

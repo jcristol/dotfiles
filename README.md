@@ -1,2 +1,2 @@
-- `./osx_brew_bootstrap` installs many of my most cherished applications and plugins on a new machine.
+- `./bootstrap_osx` run on a new osx box.
 - `./install` installs dotfiles using dotbot

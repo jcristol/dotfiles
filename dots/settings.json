@@ -1,9 +1,9 @@
 {
     "editor.fontFamily": "Fira Code iScript",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,   
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Snazzy Operator",
+    "workbench.colorTheme": "Solarized Dark",
     "workbench.iconTheme": "file-icons",
     "files.autoSave": "onFocusChange",
     "editor.tabSize": 2,
@@ -26,8 +26,10 @@
         }
     ],
     "vim.leader": "<space>",
-    "window.zoomLevel": 0,
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
-    }
+    },
+    // "editor.tokenColorCustomizations": {
+        
+    // },
 }

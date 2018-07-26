@@ -59,7 +59,7 @@ module.exports = {
     showWindowControls: "",
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: "0px 12px 18px 12px",
+    padding: "0px 12px 14px 12px",
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -129,7 +129,7 @@ module.exports = {
       hideOnBlur: false,
       hotkeys: ["Shift+Command+Space"],
       position: "bottom",
-      primaryDisplay: false,
+      primaryDisplay: true,
       resizable: false,
       startAlone: false,
       startup: true,

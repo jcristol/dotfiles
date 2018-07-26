@@ -3,7 +3,7 @@
     "editor.fontSize": 14,
     "editor.fontLigatures": true,   
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Palenight Italic",
     "workbench.iconTheme": "file-icons",
     "files.autoSave": "onFocusChange",
     "editor.tabSize": 2,
@@ -29,6 +29,7 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
+    "workbench.sideBar.location": "left",
     // "editor.tokenColorCustomizations": {
         
     // },

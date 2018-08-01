@@ -30,6 +30,10 @@
         "suppressShowKeyBindingsNotice": true
     },
     "workbench.sideBar.location": "left",
+    "emmet.includeLanguages": {
+        "javascriptreact": "html",
+        "javascript": "html"
+    },
     // "editor.tokenColorCustomizations": {
         
     // },

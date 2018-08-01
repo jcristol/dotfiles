@@ -86,8 +86,8 @@ alias push='git push'
 alias pull='git pull'
 
 # export MANPATH="/usr/local/man:$MANPATH"
-# export NVM_DIR="$HOME/.nvm"
-#   . "/usr/local/opt/nvm/nvm.sh"
+ export NVM_DIR="$HOME/.nvm"
+   . "/usr/local/opt/nvm/nvm.sh"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

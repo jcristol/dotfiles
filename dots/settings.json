@@ -3,7 +3,7 @@
     "editor.fontSize": 14,
     "editor.fontLigatures": true,   
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Palenight Italic",
+    "workbench.colorTheme": "Dracula - WebStorm Edition",
     "workbench.iconTheme": "file-icons",
     "files.autoSave": "onFocusChange",
     "editor.tabSize": 2,
@@ -34,7 +34,7 @@
         "javascriptreact": "html",
         "javascript": "html"
     },
-    // "editor.tokenColorCustomizations": {
-        
-    // },
+    "importCost.smallPackageColor": "#969490",
+    "importCost.mediumPackageColor": "#c47b15",
+    "importCost.largePackageColor": "#ea3a46"
 }

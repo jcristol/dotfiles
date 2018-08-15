@@ -121,22 +121,28 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    overlay: {
-      alwaysOnTop: true,
-      animate: false,
-      hasShadow: true,
-      hideDock: true,
-      hideOnBlur: false,
-      hotkeys: ["Shift+Command+Space"],
-      position: "bottom",
-      primaryDisplay: true,
-      resizable: false,
-      startAlone: false,
-      startup: true,
-      size: 0.5,
-      tray: false,
-      unique: true
-    },
+    // overlay: {
+    //   alwaysOnTop: true,
+    //   animate: true,
+    //   hasShadow: false,
+    //   hideDock: false,
+    //   hideOnBlur: false,
+    //   hotkeys: {
+    //     open: ['Control+Space'], // On MacOS hotkey is default to Option + Space!
+    //     close: ['Shift+Escape'], // On MacOS hotkey is default to Option + Escape!
+    //   },
+    //   position: 'top',
+    //   primaryDisplay: false,
+    //   resizable: true,
+    //   size: {
+    //     width: 0.4,
+    //     height: 0.4
+    //   },
+    //   startAlone: false,
+    //   startup: false,
+    //   tray: true,
+    //   unique: false
+    // },
 
     hyperTabs: {
       tabIconsColored: true
@@ -154,16 +160,17 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-  "hyper-tabs-enhanced",
-  "hyperline",
-  "hyper-snazzy",
-  "hypercwd"],
+  // "hyper-tabs-enhanced",
+  // "hyperline",
+  // "hyper-snazzy",
+  // "hypercwd"
+],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [
-    "hyperterm-overlay"
+    // "hyperterm-overlay"
   ],
 
   keymaps: {

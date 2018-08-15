@@ -81,7 +81,7 @@ alias ll='exa -l'
 alias l='exa -al'
 alias ls='exa -G'
 alias cat='bat'
-alias commit='git add .; gc'
+alias commit='gc'
 alias push='git push'
 alias pull='git pull'
 
@@ -91,6 +91,8 @@ alias pull='git pull'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

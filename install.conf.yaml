@@ -7,6 +7,7 @@
 - link:
     ~/.vimrc: dots/vimrc 
     ~/.zshrc: dots/zsh/zshrc.zsh
+    ~/.forward: dots/forward
     ~/.zsh_plugins.txt: dots/zsh/plugins.txt
     ~/.gitconfig: dots/gitconfig
     ~/.hyper.js: dots/hyper.js
